@@ -5,6 +5,6 @@ const VendorSchema=new mongoose.Schema({
     type: String,
     require: true
  }
-});
+}); 
 
 module.exports=mongoose.model('vendor',VendorSchema);

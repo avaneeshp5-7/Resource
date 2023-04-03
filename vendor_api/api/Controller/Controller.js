@@ -55,7 +55,10 @@ exports.Vendors = async (req, res, next) => {
 }
 
 exports.createResources= async (req,res,next)=>{
+    // console.log(req.body)
     const rowData=req.body;
+    // console.log(req.body);
+    console.log(req.file);
     console.log(rowData)
     const resources=await ResourceSchema.findOne({full_name:req.body.full_name}); 
     if(resources){
